@@ -19,4 +19,10 @@
     <PackageReference Include="microsoft.visualstudio.web.codegeneration.design" Version="5.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\OrderProducts\" />
+    <Folder Include="Views\Products\" />
+    <Folder Include="Views\Orders\" />
+  </ItemGroup>
+
 </Project>

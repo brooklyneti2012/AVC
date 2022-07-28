@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using AVC.Models;
-using AVC.Models.Order;
 
 namespace AVC.Areas.Identity.Pages.Account.Manage
 {
