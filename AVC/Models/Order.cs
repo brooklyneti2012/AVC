@@ -1,4 +1,6 @@
 ﻿using AVC.Areas.Identity.Pages.Account.Manage;
+using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace AVC.Models.Order
 {
@@ -9,6 +11,6 @@ namespace AVC.Models.Order
         public int Username { get; set; }
 
         public OrderProduct OrderProduct { get; set; }
-        public IndexModel IndexModel { get; set; }
+        public ICollection<IndexModel> IndexModels { get; set; }
     }
 }
