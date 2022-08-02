@@ -15,6 +15,7 @@ namespace AVC.Areas.Identity.Pages.Account.Manage
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
 
+        
         public IndexModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager)
@@ -25,9 +26,7 @@ namespace AVC.Areas.Identity.Pages.Account.Manage
 
         public string Username { get; set; }
 
-        public int OrderID { get; set; }
-        
-        public Order Order { get; set; }
+       
 
         [TempData]
         public string StatusMessage { get; set; }

@@ -15,12 +15,12 @@ namespace AVC.Areas.Identity
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
-                services.AddDbContext<AVCContext>(options =>
+                services.AddDbContext<AVC_Context>(options =>
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("AVCContextConnection")));
 
                 services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                    .AddEntityFrameworkStores<AVCContext>();
+                    .AddEntityFrameworkStores<AVC_Context>();
             });
         }
     }
