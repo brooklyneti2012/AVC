@@ -4,7 +4,7 @@
 
 namespace AvUni.Migrations
 {
-    public partial class OrdersTable : Migration
+    public partial class HelpMePlease : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

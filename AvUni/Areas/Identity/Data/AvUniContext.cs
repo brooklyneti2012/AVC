@@ -14,13 +14,13 @@ public class AvUniContext : IdentityDbContext<IdentityUser>
     {
     }
 
-    protected override void OnModelCreating(ModelBuilder builder)
-    {
-        base.OnModelCreating(builder);
-        // Customize the ASP.NET Identity model and override the defaults if needed.
-        // For example, you can rename the ASP.NET Identity table names and more.
-        // Add your customizations after calling base.OnModelCreating(builder);
-    }
+    //protected override void OnModelCreating(ModelBuilder builder)
+    //{
+    //    base.OnModelCreating(builder);
+    //    // Customize the ASP.NET Identity model and override the defaults if needed.
+    //    // For example, you can rename the ASP.NET Identity table names and more.
+    //    // Add your customizations after calling base.OnModelCreating(builder);
+    //}
 
     public static class DbInitializer
     {
@@ -79,6 +79,11 @@ public class AvUniContext : IdentityDbContext<IdentityUser>
                 new Product{Title="50 denier pantihose", Category="Senior yr 13", Price="$9.00"},
                 new Product{Title="Black ankle socks", Category="Senior yr 13", Price="$8.50"},
             };
+            foreach (Product p in products)
+            {
+                context.Product.Add(p);
+            }
+            context.SaveChanges();
         }
     }
     public DbSet<AVC.Models.Order>? Order { get; set; }

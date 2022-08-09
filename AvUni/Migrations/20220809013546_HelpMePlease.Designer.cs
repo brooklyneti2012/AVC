@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AvUni.Migrations
 {
     [DbContext(typeof(AvUniContext))]
-    [Migration("20220801030626_OrdersTable")]
-    partial class OrdersTable
+    [Migration("20220809013546_HelpMePlease")]
+    partial class HelpMePlease
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
