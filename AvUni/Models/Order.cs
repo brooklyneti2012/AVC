@@ -7,7 +7,8 @@ namespace AVC.Models
     {
         public int OrderID { get; set; }
         public int OrderProductID { get; set; }
-        public int Username { get; set; }
+        public string Username { get; set; }
+      
 
         public ICollection<OrderProduct> OrderProducts { get; set; }
       
