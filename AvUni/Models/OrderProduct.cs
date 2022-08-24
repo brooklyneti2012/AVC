@@ -5,7 +5,7 @@ namespace AVC.Models
     public class OrderProduct
     {
         public int OrderProductID { get; set; }
-        public int ProductQty { get; set; }
+        public int ProductCategory { get; set; }
         public int ProductID { get; set; }
         public int OrderID { get; set; }
 
